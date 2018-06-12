@@ -1,12 +1,13 @@
 import monkey
-# def print_monkeys(a):
-#     s=t=u='\n'
-#     i=0
-#     for i in range(len(a)):
-#         s += (("_,o=+#-*|_)(x@(>'^)\\&_,o=+#**|/)(x_(X*^||&_,o=+#~*|7)"+ "(x__<`^(/&")[a[i]::21]+ "*-" * (a[i] == 6)).center(14)
-#         t += "    (o o)     "
-#         u += "ooO--(_)--Ooo-"
-#     print(s+t+u[-1])
+import sys
+def print_palmtress(num):
+
+    for i in range(num):
+        sys.stdout.write(' /|\ \n')
+    for i in range(num):
+        sys.stdout.write('  | ')
+    sys.stdout.write('\n\n')
+
 
 if __name__== "__main__" :
     print("Hello, world!")
@@ -15,3 +16,4 @@ if __name__== "__main__" :
     print("I think I already understood the basic concepct of add and commit. Really?")
 
     monkey.print_monkeys([0,1,2,3,4,5])
+    print_palmtress(10)
